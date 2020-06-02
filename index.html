@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="AymKh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.github.com/AymKh/">AymKh</a>
+        </div>
+        <h1 id="mainTitle">Rock Paper Scissors Game</h1>
+    </header>
+
+    <main>
+        <section id="flex">
+            <!-- left Section -->
+            <section>
+                <div class="container">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="handButton">
+                                    <img src="img/Rock.png" alt="RockHand">
+                                </div>
+                            </td>
+                            <td rowspan="3" id="space"></td>
+                            <td rowspan="3" class="skip">
+                                <div class="handDisplay"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="handButton">
+                                    <img src="img/Paper.png" alt="PaperHand">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="handButton">
+                                    <img src="img/Scissors.png" alt="ScissorsHand">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-- rounds count -->
+
+            <section id="middle">
+                <h4>ROUND</h4>
+                <span id="roundCount">1</span>
+            </section>
+
+            <!-- right Section -->
+            <section>
+                <div class="handDisplay"></div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

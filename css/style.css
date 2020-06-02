@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    overflow: hidden;
+}
+header{
+    width: 100vw;
+    text-align: center;
+    padding: 10px;
+}
+.logo{
+    float: left;
+    font-size: 1.5em;
+    font-weight: 500;
+    display: block;
+}
+#mainTitle{
+    font-size: 2.5em;
+    margin: .9em;
+}
+main{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#flex{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 70px;
+}
+
+.handButton{
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+    margin: 14px 0;
+    border: 1px solid #707070;
+}
+.handDisplay{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #707070;
+}
+#space{
+    padding: 5px;
+}
+.skip{
+    border: none;
+} 
+#middle h4, #roundCount{
+    font-size: 2em;
+    color: red;
+    font-weight: 600;
+    width: 150px;
+    text-align: center;
+}
+#roundCount{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
