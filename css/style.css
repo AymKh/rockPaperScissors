@@ -10,30 +10,40 @@ body{
     font-size: 1rem;
     line-height: 1.7;
     overflow: hidden;
+    background-color: #24292E;
 }
 header{
     width: 100vw;
     text-align: center;
     padding: 10px;
 }
+.logo a{
+    text-decoration: none;
+    color: #d6d8da ;
+}
 .logo{
     float: left;
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-weight: 500;
     display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 #mainTitle{
-    font-size: 2.5em;
+    font-size: 3.7em;
     margin: .9em;
+    color: #9da5b4 ;
 }
 main{
     min-height: 500px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #flex{
-    width: 800px;
+    width: 1000px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -41,30 +51,30 @@ main{
     align-items: center;
 }
 img{
-    width: 70px;
+    width: 50px;
 }
-
 .handButton{
-    height: 80px;
-    width: 80px;
-    padding: 5px;
-    margin: 14px 0;
-    border: 1px solid #707070;
+    border: 1px solid #fff;
 }
 .handDisplay{
     width: 300px;
     height: 300px;
-    border: 1px solid #707070;
+    border: 1px solid #fff;
+    background-color: #1B1D23;
 }
-#space{
-    padding: 5px;
+.grid{
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 100px);
 }
-.skip{
-    border: none;
-} 
+.block-1{
+    grid-row: 1/;
+}
+
+
 #middle h4, #roundCount{
     font-size: 2em;
-    color: red;
+    color: #d6d8da;
     font-weight: 600;
     width: 150px;
     text-align: center;
@@ -72,18 +82,4 @@ img{
 #roundCount{
     display: block;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
-
-
-
-
-
-
-
-
-
-
 
