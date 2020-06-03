@@ -118,3 +118,32 @@ img{
     border-bottom: 1px solid #fff;
     text-align: center;
 }
+.rock{
+    background-image: url(../img/Rock.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.paper{
+    background-image: url(../img/Paper.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.scissors{
+    background-image: url(../img/Scissors.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.tie{
+    animation: flsh .5s;
+}
+@keyframes flsh{
+    0%{
+        color: red;
+    }
+    100%{
+        color: #d6d8da;
+    }
+}
