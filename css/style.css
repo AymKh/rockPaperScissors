@@ -32,11 +32,13 @@ header{
     right: 20px;
 }
 main{
-    min-height: 470px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
 }
 #flex{
     width: 1000px;
@@ -78,6 +80,7 @@ img{
     height: 300px;
     border: 1px solid #fff;
     background-color: #1B1D23;
+    position: relative;
 }
 #middle h4, #roundCount{
     font-size: 2em;
@@ -89,14 +92,23 @@ img{
 #roundCount{
     display: block;
 }
-.scoreKeeper{
-    display: block;
+#player1Score, #player2Score{
     color: white;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 300;
-}
-#playerOneScore, #playerTwoScore{
     font-size: 2em;
+    font-weight: 300;
+    position: absolute;
+}
+#player1Score{
+    right: -50px;
+    top: 50%;
+    width: 50px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+#player2Score{
+    left: -50px;
+    bottom: 0;
+    width: 50px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
 }
