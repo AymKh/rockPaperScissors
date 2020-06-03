@@ -25,14 +25,11 @@ header{
     color: #d6d8da ;
 }
 .logo{
-    font-size: 1.1em;
+    font-size: 1em !important;
     font-weight: 500;
     position: absolute;
     bottom: 20px;
     right: 20px;
-}
-#mainTitle{
-    
 }
 main{
     min-height: 470px;
