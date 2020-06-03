@@ -20,6 +20,9 @@ header{
     font-weight: 500;
     color: #9da5b4 ;
 }
+header::selection, #middle h4::selection, #roundCount::selection {
+    background-color: #707274;
+}
 .logo a{
     text-decoration: none;
     color: #d6d8da ;
@@ -97,6 +100,9 @@ img{
     font-size: 2em;
     font-weight: 300;
     position: absolute;
+}
+#player1Score::selection, #player2Score::selection{
+    background-color: #707274;
 }
 #player1Score{
     right: -50px;
