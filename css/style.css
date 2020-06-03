@@ -9,36 +9,34 @@ body{
     font-family: Montserrat, sans-serif;
     font-size: 1rem;
     line-height: 1.7;
-    /* overflow: hidden; */
+    overflow: hidden;
     background-color: #24292E;
 }
 header{
     width: 100vw;
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #9da5b4 ;
 }
 .logo a{
     text-decoration: none;
     color: #d6d8da ;
 }
 .logo{
-    float: left;
     font-size: 1.1em;
     font-weight: 500;
-    display: block;
     position: absolute;
     bottom: 20px;
     right: 20px;
 }
 #mainTitle{
-    font-size: 3.7em;
-    margin: .9em;
-    color: #9da5b4 ;
+    
 }
 main{
-    min-height: 500px;
+    min-height: 470px;
     width: 100%;
-    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
