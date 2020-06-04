@@ -6,10 +6,13 @@ var computerInput = 0
 var guesses = ["rock", "paper", "scissors"]
 var playerOneScore = 0
 var playerTwoScore = 0
-var roundCount = 1
+var roundCount = 0
 var score1Tag = document.getElementById('player1Score')
 var score2Tag = document.getElementById('player2Score')
 var rounds = document.getElementById("roundCount")
+var tieTag = document.getElementById('tie')
+var tie = 0
+
 
 function setRock(x){
     x.classList.remove("paper") 
@@ -82,6 +85,7 @@ function round(){
     }else{
         score1Tag.classList.toggle("tie")
         score2Tag.classList.toggle("tie")
-        rounds.textContent = roundCount
+        tie++
+        tieTag.textContent = tie
     }
 }
