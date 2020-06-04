@@ -12,11 +12,14 @@ body{
     overflow: hidden;
     background-color: #24292E;
 }
+.masterContainer{
+    width: 73%;
+    margin: auto;
+}
 header{
     width: 100vw;
     padding: 20px;
-    margin-bottom: 50px;
-    font-size: 2.5vw;
+    font-size: 2em;
     font-weight: 500;
     color: #9da5b4 ;
 }
@@ -34,6 +37,34 @@ header::selection, #middle h4::selection, #roundCount::selection {
     bottom: 20px;
     right: 20px;
 }
+#controlButtons{
+    width: 100%;
+    background: #1B1D23;
+    height: 50px;
+    position: sticky;
+    overflow: hidden;
+}
+#controlButtons ul{
+    list-style-type: none;
+    margin: 0;
+}
+#controlButtons li{
+    float:  left;
+}
+#controlButtons a{
+    float: left;
+    padding: 11px 20px;
+    background-color: #1B1D23;
+    color: #707274;
+    font-size: 1.1em;    
+    text-decoration: none;
+}
+#controlButtons a:hover{
+    background-color: #24292E;
+}
+.activeButton{
+    background-color: #24292E;
+}
 main{
     width: 100%;
     display: flex;
@@ -42,6 +73,7 @@ main{
     position: absolute;
     top: 50%;
     transform: translateY(-40%);
+    margin-top: 20px;
 }
 #flex{
     width: 1000px;
@@ -72,7 +104,7 @@ img{
     grid-column: 1/2;
 }
 .handButton{
-    border: 1px solid #fff;
+    border: 1px solid #9da5b4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +113,7 @@ img{
 .handDisplay{
     width: 300px;
     height: 300px;
-    border: 1px solid #fff;
+    border: 1px solid #9da5b4;
     background-color: #1B1D23;
     position: relative;
 }
@@ -112,14 +144,14 @@ table{
     right: -50px;
     top: 0;
     width: 50px;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #9da5b4;
     text-align: center;
 }
 #player2Score{
     left: -50px;
     bottom: 0;
     width: 50px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #9da5b4;
     text-align: center;
 }
 .rock{

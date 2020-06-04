@@ -12,6 +12,8 @@ var score2Tag = document.getElementById('player2Score')
 var rounds = document.getElementById("roundCount")
 var tieTag = document.getElementById('tie')
 var tie = 0
+var newGameButton = document.getElementById('resetButton')
+var helpButton = document.getElementById('helpButton')
 
 
 function setRock(x){
@@ -29,21 +31,24 @@ function setScissors(x){
     x.classList.remove("rock") 
     x.classList.add("scissors") 
 }
-Hands[0].addEventListener("click", function(){
-    setRock(display[0])
-    userInput = 0
-    round()
-})
-Hands[1].addEventListener("click", function(){
-    setPaper(display[0])
-    userInput = 1
-    round()
-})
-Hands[2].addEventListener("click", function(){
-    setScissors(display[0])
-    userInput = 2
-    round()
-})
+function getUserTry(){
+    Hands[0].addEventListener("click", function(){
+        setRock(display[0])
+        userInput = 0
+        round()
+    })
+    Hands[1].addEventListener("click", function(){
+        setPaper(display[0])
+        userInput = 1
+        round()
+    })
+    Hands[2].addEventListener("click", function(){
+        setScissors(display[0])
+        userInput = 2
+        round()
+    })
+}
+getUserTry()
 // generate a random Computer try
 function computerIsGuessing(){
     var randomNum = Math.floor(Math.random() * 3)
@@ -70,7 +75,6 @@ function rockPaperScissors(x, y){
     }
 }
 function round(){
-
     computerIsGuessing()
     if (rockPaperScissors(userInput, computerInput) === 1){
         playerOneScore++
@@ -83,9 +87,27 @@ function round(){
         roundCount++
         rounds.textContent = roundCount
     }else{
-        score1Tag.classList.toggle("tie")
-        score2Tag.classList.toggle("tie")
+        roundCount++
+        rounds.textContent = roundCount
         tie++
         tieTag.textContent = tie
+        tieTag.classList.toggle('tie')
     }
 }
+function removeThumbnail(x){
+    x.classList.remove("rock")
+    x.classList.remove("paper")
+    x.classList.remove("scissors")
+}
+newGameButton.addEventListener("click", function(){
+    playerOneScore = 0
+    playerTwoScore = 0
+    roundCount = 0    
+    tie = 0
+    score1Tag.textContent = playerOneScore
+    score2Tag.textContent = playerTwoScore
+    rounds.textContent = roundCount
+    tieTag.textContent = tie
+    removeThumbnail(display[0])
+    removeThumbnail(display[1])
+})
