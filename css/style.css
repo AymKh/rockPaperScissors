@@ -133,7 +133,7 @@ table{
 #player1Score, #player2Score{
     color: #DBAB09;
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 600;
     position: absolute;
 }
 #player1Score::selection, #player2Score::selection{
@@ -153,23 +153,19 @@ table{
     border-bottom: 1px solid #9da5b4;
     text-align: center;
 }
-.rock{
-    background-image: url(../img/Rock.png);
+.rock, .paper, .scissors{
     background-position: center;
-    background-size: 200px;
+    background-size: 250px;
     background-repeat: no-repeat;
+}
+.rock{
+    background-image: url(../img/Rock.png);    
 }
 .paper{
     background-image: url(../img/Paper.png);
-    background-position: center;
-    background-size: 200px;
-    background-repeat: no-repeat;
 }
 .scissors{
     background-image: url(../img/Scissors.png);
-    background-position: center;
-    background-size: 200px;
-    background-repeat: no-repeat;
 }
 #helpSection{
     width: 100%;
@@ -182,7 +178,7 @@ table{
     margin: auto;
 }
 #help-container h3{
-    margin: 30px 0;
+    margin-top: 20px;
     font-size: 2em;
     color: #9da5b4;
 }
@@ -214,12 +210,4 @@ background: #1B1D23;
 }
 ::-webkit-scrollbar-thumb:hover {
 background: #707274; 
-}
-@keyframes flsh{
-    0%{
-        color: red;
-    }
-    100%{
-        color: #d6d8da;
-    }
 }
