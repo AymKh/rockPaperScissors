@@ -132,7 +132,7 @@ table{
     width: 200px;
 }
 #player1Score, #player2Score{
-    color: white;
+    color: #DBAB09;
     font-size: 2em;
     font-weight: 300;
     position: absolute;
@@ -171,9 +171,6 @@ table{
     background-position: center;
     background-size: 200px;
     background-repeat: no-repeat;
-}
-.tie{
-    animation: flsh .5s;
 }
 @keyframes flsh{
     0%{

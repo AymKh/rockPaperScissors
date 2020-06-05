@@ -1,4 +1,4 @@
-
+var gameTab = document.querySelector('main')
 var display = document.querySelectorAll(".handDisplay")
 var Hands = document.querySelectorAll('.handButton')
 var userInput = ""
@@ -91,7 +91,6 @@ function round(){
         rounds.textContent = roundCount
         tie++
         tieTag.textContent = tie
-        tieTag.classList.toggle('tie')
     }
 }
 function removeThumbnail(x){
@@ -100,6 +99,7 @@ function removeThumbnail(x){
     x.classList.remove("scissors")
 }
 newGameButton.addEventListener("click", function(){
+    gameTab.style.display = "block"
     playerOneScore = 0
     playerTwoScore = 0
     roundCount = 0    
@@ -110,4 +110,7 @@ newGameButton.addEventListener("click", function(){
     tieTag.textContent = tie
     removeThumbnail(display[0])
     removeThumbnail(display[1])
+})
+helpButton.addEventListener('click', function(){
+    gameTab.style.display = "none"
 })
