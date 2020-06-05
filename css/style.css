@@ -9,7 +9,7 @@ body{
     font-family: Montserrat, sans-serif;
     font-size: 1rem;
     line-height: 1.7;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: #24292E;
 }
 .masterContainer{
@@ -19,7 +19,7 @@ body{
 header{
     width: 100vw;
     padding: 20px;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 500;
     color: #9da5b4 ;
 }
@@ -33,7 +33,7 @@ header::selection, #middle h4::selection, #roundCount::selection {
 .logo{
     font-size: 1vw !important;
     font-weight: 500;
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
 }
@@ -54,7 +54,6 @@ header::selection, #middle h4::selection, #roundCount::selection {
 #controlButtons a{
     float: left;
     padding: 11px 20px;
-    background-color: #1B1D23;
     color: #707274;
     font-size: 1.1em;    
     text-decoration: none;
@@ -67,7 +66,7 @@ header::selection, #middle h4::selection, #roundCount::selection {
 }
 main{
     width: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -171,6 +170,51 @@ table{
     background-position: center;
     background-size: 200px;
     background-repeat: no-repeat;
+}
+#helpSection{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+#help-container{
+    width: 73%;
+    margin: auto;
+}
+#help-container h3{
+    margin: 30px 0;
+    font-size: 2em;
+    color: #9da5b4;
+}
+#help-container p{
+    font-size: 1.1em;
+    color: #fff;
+}
+#help-container a{
+    text-decoration: none;
+    color: #707274;
+}
+#help-container ul{
+    list-style-type: none;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.lessThan{
+    color: #DBAB09;
+    margin: 0 5px;
+}
+::-webkit-scrollbar {
+width: 10px;
+}
+::-webkit-scrollbar-track {
+background: #1B1D23; 
+}
+::-webkit-scrollbar-thumb {
+background: #1B1D23; 
+}
+::-webkit-scrollbar-thumb:hover {
+background: #707274; 
 }
 @keyframes flsh{
     0%{

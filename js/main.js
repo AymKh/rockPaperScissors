@@ -1,4 +1,5 @@
 var gameTab = document.querySelector('main')
+var helpTab = document.querySelector("#helpSection")
 var display = document.querySelectorAll(".handDisplay")
 var Hands = document.querySelectorAll('.handButton')
 var userInput = ""
@@ -98,8 +99,19 @@ function removeThumbnail(x){
     x.classList.remove("paper")
     x.classList.remove("scissors")
 }
-newGameButton.addEventListener("click", function(){
+function showGame(){
+    helpButton.classList.remove('activeButton')
     gameTab.style.display = "block"
+    helpTab.style.display = "none"  
+}
+function showHelp(){
+    helpButton.classList.add('activeButton')
+    gameTab.style.display = "none"
+    document.body.style.overflowY = "auto"
+    helpTab.style.display = "block"
+}
+newGameButton.addEventListener("click", function(){
+    showGame()
     playerOneScore = 0
     playerTwoScore = 0
     roundCount = 0    
@@ -111,6 +123,4 @@ newGameButton.addEventListener("click", function(){
     removeThumbnail(display[0])
     removeThumbnail(display[1])
 })
-helpButton.addEventListener('click', function(){
-    gameTab.style.display = "none"
-})
+helpButton.addEventListener('click',showHelp)
