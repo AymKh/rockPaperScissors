@@ -6,3 +6,6 @@
 
   
 you can check the game here : https://rockpaperscissors.tn/
+
+## License
+Copyright © 2020, AymKh [MIT](LICENSE)
