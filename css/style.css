@@ -200,9 +200,8 @@ table{
     margin-top: 10px;
     margin-left: 20px;
 }
-.lessThan{
-    color: #DBAB09;
-    margin: 0 5px;
+#rulesImg{
+    width: 500px;
 }
 ::-webkit-scrollbar {
 width: 10px;

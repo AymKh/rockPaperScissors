@@ -67,12 +67,16 @@ function computerIsGuessing(){
 }
 
 function rockPaperScissors(x, y){
-    if(x>y){
+    if(x === 0 && y ===2){
         return 1
-    }else if(x<y){
-        return 2
     }else{
-        return 3
+        if(x>y){
+            return 1
+        }else if(x<y){
+            return 2
+        }else{
+            return 3
+        }
     }
 }
 function round(){
